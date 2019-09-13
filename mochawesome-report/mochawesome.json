@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 1,
-    "start": "2019-09-13T23:06:47.486Z",
-    "end": "2019-09-13T23:07:00.873Z",
-    "duration": 13387,
+    "start": "2019-09-13T23:29:56.901Z",
+    "end": "2019-09-13T23:30:12.044Z",
+    "duration": 15143,
     "testsRegistered": 3,
     "passPercent": 66.7,
     "pendingPercent": 0,
@@ -19,7 +19,7 @@
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "cf3d5e58-cd81-4ed6-be11-084ecadd3a27",
+    "uuid": "cf78cc06-4da9-4826-a2f3-11315b04d6d7",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,7 +28,7 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "6a8acc54-dade-4fcf-a16f-b2e535a9fcaf",
+        "uuid": "59c84eeb-f943-417e-95d3-ed2a4b007ae3",
         "title": "library app scenarios",
         "fullFile": "/Users/liuyi/study/js/webdriverjs/test.js",
         "file": "/test.js",
@@ -37,14 +37,14 @@
             "title": "\"before each\" hook",
             "fullTitle": "library app scenarios \"before each\" hook",
             "timedOut": false,
-            "duration": 1,
+            "duration": 0,
             "pass": false,
             "fail": false,
             "pending": false,
             "code": "page = new Page();\n      page.driver.manage().window().setPosition(0, -600);\n      page.visit('http://1ke.co/login');",
             "err": {},
             "isRoot": false,
-            "uuid": "0fcb40b2-262c-40fd-a801-c35fa238bf9e",
+            "uuid": "ef208f7c-6428-4652-b84b-44f0d2c18df0",
             "isHook": true,
             "skipped": false
           }
@@ -61,7 +61,7 @@
             "code": "page.driver.quit();",
             "err": {},
             "isRoot": false,
-            "uuid": "3a2acf3e-f034-417b-a66a-c0a4b5fbd3e5",
+            "uuid": "4bc079c5-2496-4b20-a22e-85e0c7d8c296",
             "isHook": true,
             "skipped": false
           }
@@ -71,7 +71,7 @@
             "title": "works with mocha",
             "fullTitle": "library app scenarios works with mocha",
             "timedOut": false,
-            "duration": 4729,
+            "duration": 6298,
             "state": "failed",
             "pass": false,
             "fail": true,
@@ -82,7 +82,7 @@
               "estack": "AssertionError: expected '请输入密码' to include '密码!'\nFrom: Task: library app scenarios works with mocha\n    at Context.ret (node_modules/selenium-webdriver/testing/index.js:182:10)"
             },
             "isRoot": false,
-            "uuid": "e4c30263-6454-4844-a203-6f1e87d9575c",
+            "uuid": "0571c90b-8629-4f2e-b5d8-39994722258c",
             "isHook": false,
             "skipped": false
           },
@@ -90,7 +90,7 @@
             "title": "works with mocha 2",
             "fullTitle": "library app scenarios works with mocha 2",
             "timedOut": false,
-            "duration": 3891,
+            "duration": 4773,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -99,7 +99,7 @@
             "code": "console.log('all right');\nassert.equal(1 + 2, 3);",
             "err": {},
             "isRoot": false,
-            "uuid": "8db9b97b-a721-43eb-839f-65d32ae7a014",
+            "uuid": "a2fa6c02-7a74-431d-9bca-8ce0cd30829f",
             "isHook": false,
             "skipped": false
           },
@@ -107,7 +107,7 @@
             "title": "works with mocha 3",
             "fullTitle": "library app scenarios works with mocha 3",
             "timedOut": false,
-            "duration": 4733,
+            "duration": 4031,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -116,22 +116,22 @@
             "code": "var btn = page.requestBtn();\nbtn.background.should.eventually.equal('rgba(29, 206, 115, 1)');\nbtn.state.should.eventually.be.true;",
             "err": {},
             "isRoot": false,
-            "uuid": "6d190c89-8a88-48f7-9227-4dd09c83edc9",
+            "uuid": "55fcb86c-f15c-40f3-9e96-072a6a7c250e",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "8db9b97b-a721-43eb-839f-65d32ae7a014",
-          "6d190c89-8a88-48f7-9227-4dd09c83edc9"
+          "a2fa6c02-7a74-431d-9bca-8ce0cd30829f",
+          "55fcb86c-f15c-40f3-9e96-072a6a7c250e"
         ],
         "failures": [
-          "e4c30263-6454-4844-a203-6f1e87d9575c"
+          "0571c90b-8629-4f2e-b5d8-39994722258c"
         ],
         "pending": [],
         "skipped": [],
-        "duration": 13353,
+        "duration": 15102,
         "root": false,
         "rootEmpty": false,
         "_timeout": 50000
