@@ -33,12 +33,9 @@
     it('works with mocha', function () {
 
 
-      page.login().then(
-        function (txt) {
-          console.log('txt is :' + txt);
-          assert(txt === '请输入密码');
-        }
-      )
+
+      var login = page.login();
+      login.should.eventually.contain('密码!');
 
 
 
@@ -46,7 +43,7 @@
 
     it('works with mocha 2', function () {
       console.log('all right');
-      assert.equal(1 + 2, 4);
+      assert.equal(1 + 2, 3);
     });
 
     it('works with mocha 3', function () {
