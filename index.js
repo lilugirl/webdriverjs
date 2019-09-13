@@ -6,9 +6,11 @@ var webdriver = require('selenium-webdriver'),
     before
   } = require('selenium-webdriver/testing'),
   By = webdriver.By,
+  assert = require('assert'),
   until = webdriver.until;
 
 var driver;
+var assert;
 
 
 describe('library app scenarios', function () {
@@ -20,6 +22,7 @@ describe('library app scenarios', function () {
       .build();
 
     driver.get('http://1ke.co/login');
+    driver.manage().window().setPosition(0, -600);
 
 
 
@@ -38,12 +41,18 @@ describe('library app scenarios', function () {
 
     driver.wait(until.elementLocated(By.css('.text-danger'))).getText().then(function (txt) {
       console.log('txt is :' + txt);
+      assert(txt === '请输入帐号!');
     });
 
   });
 
   it('works with mocha 2', function () {
     console.log('all right');
+    assert.equal(1 + 2, 4);
+  });
+
+  it('works with mocha 3', function () {
+    console.log('yes');
   })
 
 });
