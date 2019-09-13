@@ -4,7 +4,7 @@
     after,
     before
   } = require('selenium-webdriver/testing');
-  var Page = require('./lib/base_page');
+  var Page = require('./lib/home_page');
   var page;
   var driver;
   var assert = require('assert');
@@ -29,10 +29,7 @@
     it('works with mocha', function () {
 
 
-      page.write('#login_username', 'lilugirl2005@126.com');
-      page.find('.btn-large').click();
-
-      page.find('.text-danger').getText().then(
+      page.login().then(
         function (txt) {
           console.log('txt is :' + txt);
           assert(txt === '请输入密码');
