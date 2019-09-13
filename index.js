@@ -7,8 +7,11 @@ var webdriver = require('selenium-webdriver'),
   } = require('selenium-webdriver/testing'),
   By = webdriver.By,
   assert = require('assert'),
-  until = webdriver.until;
+  until = webdriver.until,
+  chrome = require('selenium-webdriver/chrome');
 
+var o = new chrome.Options();
+o.addArguments('disable-infobars');
 var driver;
 var assert;
 
@@ -17,12 +20,11 @@ describe('library app scenarios', function () {
   this.timeout(50000);
   beforeEach(function () {
 
-    driver = new webdriver.Builder()
-      .forBrowser('chrome')
-      .build();
+    driver = new webdriver.Builder().withCapabilities(webdriver.Capabilities.chrome()).setChromeOptions(o).build();
+    driver.manage().window().setPosition(0, -600);
 
     driver.get('http://1ke.co/login');
-    driver.manage().window().setPosition(0, -600);
+
 
 
 
