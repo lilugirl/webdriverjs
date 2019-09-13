@@ -5,9 +5,13 @@
     before
   } = require('selenium-webdriver/testing');
   var Page = require('./lib/home_page');
+  var chai = require('chai');
+  var chaiAsPromised = require('chai-as-promised');
+  var should = chai.should();
   var page;
-  var driver;
   var assert = require('assert');
+
+  chai.use(chaiAsPromised);
 
 
   describe('library app scenarios', function () {
@@ -46,7 +50,10 @@
     });
 
     it('works with mocha 3', function () {
-      console.log('yes');
+      var btn = page.requestBtn();
+      btn.background.should.eventually.equal('rgba(29, 206, 115, 1)');
+      btn.state.should.eventually.be.true;
+
     })
 
   });

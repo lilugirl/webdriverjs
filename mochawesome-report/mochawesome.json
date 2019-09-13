@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 1,
-    "start": "2019-09-13T22:31:41.658Z",
-    "end": "2019-09-13T22:31:52.962Z",
-    "duration": 11304,
+    "start": "2019-09-13T22:59:44.464Z",
+    "end": "2019-09-13T22:59:56.006Z",
+    "duration": 11542,
     "testsRegistered": 3,
     "passPercent": 66.7,
     "pendingPercent": 0,
@@ -19,7 +19,7 @@
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "6db8e756-d3f1-4f9a-a92a-bdb888ead9bc",
+    "uuid": "c336599b-d7bb-478e-becc-08315645e425",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,7 +28,7 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "03183a72-fada-4a4e-9155-f1727ec3bfa8",
+        "uuid": "99e94b01-93c4-47a5-ac6b-fd72c6e5e6ed",
         "title": "library app scenarios",
         "fullFile": "/Users/liuyi/study/js/webdriverjs/test.js",
         "file": "/test.js",
@@ -37,14 +37,14 @@
             "title": "\"before each\" hook",
             "fullTitle": "library app scenarios \"before each\" hook",
             "timedOut": false,
-            "duration": 1,
+            "duration": 0,
             "pass": false,
             "fail": false,
             "pending": false,
             "code": "page = new Page();\n      page.driver.manage().window().setPosition(0, -600);\n      page.visit('http://1ke.co/login');",
             "err": {},
             "isRoot": false,
-            "uuid": "83aeb26c-54e3-498c-bc6d-c4c53d05d42b",
+            "uuid": "1ffa92ab-eead-47e1-8fb0-df1d7db3a15d",
             "isHook": true,
             "skipped": false
           }
@@ -61,7 +61,7 @@
             "code": "page.driver.quit();",
             "err": {},
             "isRoot": false,
-            "uuid": "7ce7d4a9-0e64-4288-9103-0d77b3004dd5",
+            "uuid": "89b7c92e-f23c-414c-b72a-2af422811bdd",
             "isHook": true,
             "skipped": false
           }
@@ -71,7 +71,7 @@
             "title": "works with mocha",
             "fullTitle": "library app scenarios works with mocha",
             "timedOut": false,
-            "duration": 4300,
+            "duration": 4191,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -80,7 +80,7 @@
             "code": "page.login().then(\n        function (txt) {\n          console.log('txt is :' + txt);\n          assert(txt === '请输入密码');\n        }\n      )",
             "err": {},
             "isRoot": false,
-            "uuid": "806f12fb-a085-474a-9953-79d0a2a55147",
+            "uuid": "959b7aaf-69c3-424c-aa70-8673f387a57a",
             "isHook": false,
             "skipped": false
           },
@@ -88,7 +88,7 @@
             "title": "works with mocha 2",
             "fullTitle": "library app scenarios works with mocha 2",
             "timedOut": false,
-            "duration": 3493,
+            "duration": 3475,
             "state": "failed",
             "pass": false,
             "fail": true,
@@ -96,11 +96,11 @@
             "code": "console.log('all right');\nassert.equal(1 + 2, 4);",
             "err": {
               "message": "AssertionError [ERR_ASSERTION]: 3 == 4",
-              "estack": "AssertionError [ERR_ASSERTION]: 3 == 4\n    at Context.<anonymous> (test.js:45:14)\n    at runTest (node_modules/selenium-webdriver/testing/index.js:163:22)\n    at /Users/liuyi/study/js/webdriverjs/node_modules/selenium-webdriver/testing/index.js:184:16\n    at new ManagedPromise (node_modules/selenium-webdriver/lib/promise.js:1077:7)\n    at controlFlowExecute (node_modules/selenium-webdriver/testing/index.js:183:14)\n    at TaskQueue.execute_ (node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at asyncRun (node_modules/selenium-webdriver/lib/promise.js:2927:27)\n    at /Users/liuyi/study/js/webdriverjs/node_modules/selenium-webdriver/lib/promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)\nFrom: Task: library app scenarios works with mocha 2\n    at Context.ret (node_modules/selenium-webdriver/testing/index.js:182:10)",
+              "estack": "AssertionError [ERR_ASSERTION]: 3 == 4\n    at Context.<anonymous> (test.js:49:14)\n    at runTest (node_modules/selenium-webdriver/testing/index.js:163:22)\n    at /Users/liuyi/study/js/webdriverjs/node_modules/selenium-webdriver/testing/index.js:184:16\n    at new ManagedPromise (node_modules/selenium-webdriver/lib/promise.js:1077:7)\n    at controlFlowExecute (node_modules/selenium-webdriver/testing/index.js:183:14)\n    at TaskQueue.execute_ (node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at asyncRun (node_modules/selenium-webdriver/lib/promise.js:2927:27)\n    at /Users/liuyi/study/js/webdriverjs/node_modules/selenium-webdriver/lib/promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)\nFrom: Task: library app scenarios works with mocha 2\n    at Context.ret (node_modules/selenium-webdriver/testing/index.js:182:10)",
               "diff": "- 3\n+ 4\n"
             },
             "isRoot": false,
-            "uuid": "a3eb6445-ff97-407c-a0ad-82214af2f463",
+            "uuid": "f7b01572-2c19-4d1f-ae39-a854add7da1b",
             "isHook": false,
             "skipped": false
           },
@@ -108,31 +108,31 @@
             "title": "works with mocha 3",
             "fullTitle": "library app scenarios works with mocha 3",
             "timedOut": false,
-            "duration": 3473,
+            "duration": 3838,
             "state": "passed",
             "speed": "slow",
             "pass": true,
             "fail": false,
             "pending": false,
-            "code": "console.log('yes');",
+            "code": "var btn = page.requestBtn();\nbtn.background.should.eventually.equal('rgba(29, 206, 115, 1)');\nbtn.state.should.eventually.be.true;",
             "err": {},
             "isRoot": false,
-            "uuid": "b3e99649-c39d-41ed-b617-c281e2d510c5",
+            "uuid": "428effdb-1be1-4816-b7c8-7f42577d3be4",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "806f12fb-a085-474a-9953-79d0a2a55147",
-          "b3e99649-c39d-41ed-b617-c281e2d510c5"
+          "959b7aaf-69c3-424c-aa70-8673f387a57a",
+          "428effdb-1be1-4816-b7c8-7f42577d3be4"
         ],
         "failures": [
-          "a3eb6445-ff97-407c-a0ad-82214af2f463"
+          "f7b01572-2c19-4d1f-ae39-a854add7da1b"
         ],
         "pending": [],
         "skipped": [],
-        "duration": 11266,
+        "duration": 11504,
         "root": false,
         "rootEmpty": false,
         "_timeout": 50000
