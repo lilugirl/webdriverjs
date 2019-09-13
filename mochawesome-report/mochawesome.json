@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-09-13T20:47:09.807Z",
+    "end": "2019-09-13T20:47:15.894Z",
+    "duration": 6087,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "604d0fdf-2d49-4a05-a685-63e93c496c8d",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "601f2183-ecd0-4811-b059-7b9a0ca6863a",
+        "title": "library app scenarios",
+        "fullFile": "/Users/liuyi/study/js/webdriverjs/index.js",
+        "file": "/index.js",
+        "beforeHooks": [
+          {
+            "title": "\"before each\" hook",
+            "fullTitle": "library app scenarios \"before each\" hook",
+            "timedOut": false,
+            "duration": 1,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "driver = new webdriver.Builder()\n      .forBrowser('chrome')\n      .build();\n    driver.get('http://1ke.co/login');",
+            "err": {},
+            "isRoot": false,
+            "uuid": "3a633fba-31ef-4e59-a412-18205c9854c5",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [
+          {
+            "title": "\"after each\" hook",
+            "fullTitle": "library app scenarios \"after each\" hook",
+            "timedOut": false,
+            "duration": 1,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "driver.quit();",
+            "err": {},
+            "isRoot": false,
+            "uuid": "ebc604d7-f92a-4178-9c14-09e1b1b112a0",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "tests": [
+          {
+            "title": "works with mocha",
+            "fullTitle": "library app scenarios works with mocha",
+            "timedOut": false,
+            "duration": 2965,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "var submitBtn = driver.findElement(By.css('.btn-large'));\n    submitBtn.click();\n    driver.wait(until.elementLocated(By.css('.text-danger'))).getText().then(function (txt) {\n      console.log('txt is :' + txt);\n    });",
+            "err": {},
+            "isRoot": false,
+            "uuid": "1e62c697-2087-4ec5-80b4-bae55b8a9da1",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "works with mocha 2",
+            "fullTitle": "library app scenarios works with mocha 2",
+            "timedOut": false,
+            "duration": 3099,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "console.log('all right');",
+            "err": {},
+            "isRoot": false,
+            "uuid": "60e54c8c-fe87-47b7-a28e-92bc1a0dbe9c",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "1e62c697-2087-4ec5-80b4-bae55b8a9da1",
+          "60e54c8c-fe87-47b7-a28e-92bc1a0dbe9c"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 6064,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 50000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2019
+}
