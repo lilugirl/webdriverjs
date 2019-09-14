@@ -9,8 +9,8 @@
   var chaiAsPromised = require('chai-as-promised');
   var should = chai.should();
   var page;
-  var assert = require('assert');
-  var locator = require('../utils/locators');
+
+
 
   chai.use(chaiAsPromised);
 
@@ -32,7 +32,7 @@
     });
 
 
-    /** 
+
     it('it should have a list', function () {
 
       var list = page.listCourses();
@@ -47,10 +47,11 @@
 
 
     });
-    */
+
 
     it('it should have search', function () {
-      page.searchCourse().should.eventually.contain(locator.searchKeyWord);
+      var search = page.searchCourse();
+      search.courseList.should.eventually.contain(search.searchKeyword);
     })
 
   });
