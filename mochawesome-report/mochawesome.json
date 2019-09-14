@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2019-09-14T09:06:21.355Z",
-    "end": "2019-09-14T09:06:59.878Z",
-    "duration": 38523,
+    "start": "2019-09-14T10:11:49.138Z",
+    "end": "2019-09-14T10:12:20.328Z",
+    "duration": 31190,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -19,7 +19,7 @@
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "d0dfe5f6-3f93-47e6-a91a-d7d9a06496c8",
+    "uuid": "ab40402c-bbf0-4448-b2af-c816d028520b",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,7 +28,7 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "6e86ebbe-2c12-44cb-aeec-d4ee2226d3b6",
+        "uuid": "f1a36891-db5b-42cf-ae41-8f1d542e82d9",
         "title": "1ke courselist scenarios",
         "fullFile": "/Users/liuyi/study/js/webdriverjs/test/list.js",
         "file": "/test/list.js",
@@ -44,7 +44,7 @@
             "code": "page = new Page();\n      page.driver.manage().window().setPosition(0, -600);\n      page.visit('http://1ke.co/course/explore');",
             "err": {},
             "isRoot": false,
-            "uuid": "2c7a517d-8d1d-481a-9880-f1eb36176d78",
+            "uuid": "60ce1633-3edb-4b95-a1f3-329b0653669c",
             "isHook": true,
             "skipped": false
           }
@@ -61,7 +61,7 @@
             "code": "page.driver.quit();",
             "err": {},
             "isRoot": false,
-            "uuid": "f1788d03-3667-4767-a7ce-ec0646d1ea76",
+            "uuid": "bcf864fa-a063-470b-9abd-b20edf3e1acd",
             "isHook": true,
             "skipped": false
           }
@@ -71,16 +71,16 @@
             "title": "it should have a list",
             "fullTitle": "1ke courselist scenarios it should have a list",
             "timedOut": false,
-            "duration": 9334,
+            "duration": 6863,
             "state": "passed",
             "speed": "slow",
             "pass": true,
             "fail": false,
             "pending": false,
-            "code": "var list = page.listCourses();",
+            "code": "var list = page.listCourses();\n      list.should.eventually.have.length.above(10);",
             "err": {},
             "isRoot": false,
-            "uuid": "bf4a8564-02f6-43e5-810a-892447062ad6",
+            "uuid": "f1e18195-4e8a-4593-b537-0f3536a44e39",
             "isHook": false,
             "skipped": false
           },
@@ -88,7 +88,7 @@
             "title": "it should have filter",
             "fullTitle": "1ke courselist scenarios it should have filter",
             "timedOut": false,
-            "duration": 12891,
+            "duration": 11661,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -97,7 +97,7 @@
             "code": "page.clickBasicBtn().should.eventually.contain('零基础');",
             "err": {},
             "isRoot": false,
-            "uuid": "1c390554-83d3-4932-9adc-d000dabff911",
+            "uuid": "d273e61e-9ba2-4706-ad8c-c8f754b4381c",
             "isHook": false,
             "skipped": false
           },
@@ -105,7 +105,7 @@
             "title": "it should have search",
             "fullTitle": "1ke courselist scenarios it should have search",
             "timedOut": false,
-            "duration": 16254,
+            "duration": 12624,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -114,21 +114,21 @@
             "code": "var search = page.searchCourse();\nsearch.courseList.should.eventually.contain(search.searchKeyword);",
             "err": {},
             "isRoot": false,
-            "uuid": "6e97f970-0d17-4812-8bef-0cf809979642",
+            "uuid": "e9a696c3-e2c6-4863-acc0-b4ea054caa71",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "bf4a8564-02f6-43e5-810a-892447062ad6",
-          "1c390554-83d3-4932-9adc-d000dabff911",
-          "6e97f970-0d17-4812-8bef-0cf809979642"
+          "f1e18195-4e8a-4593-b537-0f3536a44e39",
+          "d273e61e-9ba2-4706-ad8c-c8f754b4381c",
+          "e9a696c3-e2c6-4863-acc0-b4ea054caa71"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 38479,
+        "duration": 31148,
         "root": false,
         "rootEmpty": false,
         "_timeout": 80000
