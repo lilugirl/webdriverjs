@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2019-09-14T08:29:39.838Z",
-    "end": "2019-09-14T08:30:13.798Z",
-    "duration": 33960,
+    "start": "2019-09-14T09:06:21.355Z",
+    "end": "2019-09-14T09:06:59.878Z",
+    "duration": 38523,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -19,7 +19,7 @@
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "b7c55ab1-443f-4dd6-a7b8-3ed59f36c8c4",
+    "uuid": "d0dfe5f6-3f93-47e6-a91a-d7d9a06496c8",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,23 +28,23 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "9f878dc4-c75b-428f-8abf-839f6c24c4fa",
-        "title": "Courses page scenarios",
+        "uuid": "6e86ebbe-2c12-44cb-aeec-d4ee2226d3b6",
+        "title": "1ke courselist scenarios",
         "fullFile": "/Users/liuyi/study/js/webdriverjs/test/list.js",
         "file": "/test/list.js",
         "beforeHooks": [
           {
             "title": "\"before each\" hook",
-            "fullTitle": "Courses page scenarios \"before each\" hook",
+            "fullTitle": "1ke courselist scenarios \"before each\" hook",
             "timedOut": false,
-            "duration": 0,
+            "duration": 1,
             "pass": false,
             "fail": false,
             "pending": false,
             "code": "page = new Page();\n      page.driver.manage().window().setPosition(0, -600);\n      page.visit('http://1ke.co/course/explore');",
             "err": {},
             "isRoot": false,
-            "uuid": "cb35c183-ce55-4101-8a14-c82d912b48a3",
+            "uuid": "2c7a517d-8d1d-481a-9880-f1eb36176d78",
             "isHook": true,
             "skipped": false
           }
@@ -52,7 +52,7 @@
         "afterHooks": [
           {
             "title": "\"after each\" hook",
-            "fullTitle": "Courses page scenarios \"after each\" hook",
+            "fullTitle": "1ke courselist scenarios \"after each\" hook",
             "timedOut": false,
             "duration": 0,
             "pass": false,
@@ -61,7 +61,7 @@
             "code": "page.driver.quit();",
             "err": {},
             "isRoot": false,
-            "uuid": "9fc24148-a2e5-4a50-93cc-da3c1fa2879a",
+            "uuid": "f1788d03-3667-4767-a7ce-ec0646d1ea76",
             "isHook": true,
             "skipped": false
           }
@@ -69,9 +69,9 @@
         "tests": [
           {
             "title": "it should have a list",
-            "fullTitle": "Courses page scenarios it should have a list",
+            "fullTitle": "1ke courselist scenarios it should have a list",
             "timedOut": false,
-            "duration": 9478,
+            "duration": 9334,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -80,15 +80,15 @@
             "code": "var list = page.listCourses();",
             "err": {},
             "isRoot": false,
-            "uuid": "4fe751ee-bb5f-477f-bc92-959393bd393c",
+            "uuid": "bf4a8564-02f6-43e5-810a-892447062ad6",
             "isHook": false,
             "skipped": false
           },
           {
             "title": "it should have filter",
-            "fullTitle": "Courses page scenarios it should have filter",
+            "fullTitle": "1ke courselist scenarios it should have filter",
             "timedOut": false,
-            "duration": 10899,
+            "duration": 12891,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -97,15 +97,15 @@
             "code": "page.clickBasicBtn().should.eventually.contain('零基础');",
             "err": {},
             "isRoot": false,
-            "uuid": "573f2af1-6bbf-41d5-a0cc-6a701b7abb7b",
+            "uuid": "1c390554-83d3-4932-9adc-d000dabff911",
             "isHook": false,
             "skipped": false
           },
           {
             "title": "it should have search",
-            "fullTitle": "Courses page scenarios it should have search",
+            "fullTitle": "1ke courselist scenarios it should have search",
             "timedOut": false,
-            "duration": 13545,
+            "duration": 16254,
             "state": "passed",
             "speed": "slow",
             "pass": true,
@@ -114,21 +114,21 @@
             "code": "var search = page.searchCourse();\nsearch.courseList.should.eventually.contain(search.searchKeyword);",
             "err": {},
             "isRoot": false,
-            "uuid": "7d76d0ec-4bb4-4fc4-b2a1-32bd85c20c92",
+            "uuid": "6e97f970-0d17-4812-8bef-0cf809979642",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "4fe751ee-bb5f-477f-bc92-959393bd393c",
-          "573f2af1-6bbf-41d5-a0cc-6a701b7abb7b",
-          "7d76d0ec-4bb4-4fc4-b2a1-32bd85c20c92"
+          "bf4a8564-02f6-43e5-810a-892447062ad6",
+          "1c390554-83d3-4932-9adc-d000dabff911",
+          "6e97f970-0d17-4812-8bef-0cf809979642"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 33922,
+        "duration": 38479,
         "root": false,
         "rootEmpty": false,
         "_timeout": 80000

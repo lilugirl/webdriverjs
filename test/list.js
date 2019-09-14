@@ -15,7 +15,7 @@
   chai.use(chaiAsPromised);
 
 
-  describe('Courses page scenarios', function () {
+  describe('1ke courselist scenarios', function () {
     this.timeout(80000);
     beforeEach(function () {
 
@@ -36,6 +36,7 @@
     it('it should have a list', function () {
 
       var list = page.listCourses();
+      list.should.eventually.have.length.above(10);
 
 
     });

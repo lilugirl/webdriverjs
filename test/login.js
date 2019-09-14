@@ -1,9 +1,3 @@
-  var {
-    describe,
-    it,
-    after,
-    before
-  } = require('selenium-webdriver/testing');
   var Page = require('../lib/home_page');
   var chai = require('chai');
   var chaiAsPromised = require('chai-as-promised');
@@ -14,7 +8,7 @@
   chai.use(chaiAsPromised);
 
 
-  describe('library app scenarios', function () {
+  describe('1ke login scenarios', function () {
     this.timeout(50000);
     beforeEach(function () {
 
