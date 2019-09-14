@@ -10,12 +10,13 @@
   var should = chai.should();
   var page;
   var assert = require('assert');
+  var locator = require('../utils/locators');
 
   chai.use(chaiAsPromised);
 
 
-  describe('library app scenarios', function () {
-    this.timeout(50000);
+  describe('Courses page scenarios', function () {
+    this.timeout(80000);
     beforeEach(function () {
 
       page = new Page();
@@ -30,6 +31,8 @@
 
     });
 
+
+    /** 
     it('it should have a list', function () {
 
       var list = page.listCourses();
@@ -44,5 +47,10 @@
 
 
     });
+    */
+
+    it('it should have search', function () {
+      page.searchCourse().should.eventually.contain(locator.searchKeyWord);
+    })
 
   });

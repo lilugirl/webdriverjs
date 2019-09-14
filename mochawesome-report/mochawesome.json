@@ -1,14 +1,14 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 2,
-    "passes": 2,
+    "tests": 1,
+    "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2019-09-14T07:24:50.069Z",
-    "end": "2019-09-14T07:25:10.042Z",
-    "duration": 19973,
-    "testsRegistered": 2,
+    "start": "2019-09-14T08:09:08.765Z",
+    "end": "2019-09-14T08:09:23.148Z",
+    "duration": 14383,
+    "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -19,7 +19,7 @@
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "ed5e69c8-9de5-493d-8b47-20cba54c9774",
+    "uuid": "82c35484-0094-40f2-aff9-811101d811f5",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,23 +28,23 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "63f77b78-a38c-43b4-845f-870ff944ab5d",
-        "title": "library app scenarios",
+        "uuid": "561a0c53-1a8e-4798-81a4-73bee3134d6c",
+        "title": "Courses page scenarios",
         "fullFile": "/Users/liuyi/study/js/webdriverjs/test/list.js",
         "file": "/test/list.js",
         "beforeHooks": [
           {
             "title": "\"before each\" hook",
-            "fullTitle": "library app scenarios \"before each\" hook",
+            "fullTitle": "Courses page scenarios \"before each\" hook",
             "timedOut": false,
-            "duration": 2,
+            "duration": 17,
             "pass": false,
             "fail": false,
             "pending": false,
             "code": "page = new Page();\n      page.driver.manage().window().setPosition(0, -600);\n      page.visit('http://1ke.co/course/explore');",
             "err": {},
             "isRoot": false,
-            "uuid": "7f0a7bfc-173c-4f17-bed7-1b87907aaeed",
+            "uuid": "68f8b012-5b10-47ed-9c60-b8eeaa90d73c",
             "isHook": true,
             "skipped": false
           }
@@ -52,7 +52,7 @@
         "afterHooks": [
           {
             "title": "\"after each\" hook",
-            "fullTitle": "library app scenarios \"after each\" hook",
+            "fullTitle": "Courses page scenarios \"after each\" hook",
             "timedOut": false,
             "duration": 0,
             "pass": false,
@@ -61,59 +61,41 @@
             "code": "page.driver.quit();",
             "err": {},
             "isRoot": false,
-            "uuid": "107de735-9e94-41f1-b39a-9f7801e36a89",
+            "uuid": "6865a401-69cc-43c3-ae27-25de5b0d60a4",
             "isHook": true,
             "skipped": false
           }
         ],
         "tests": [
           {
-            "title": "it should have a list",
-            "fullTitle": "library app scenarios it should have a list",
+            "title": "it should have search",
+            "fullTitle": "Courses page scenarios it should have search",
             "timedOut": false,
-            "duration": 8201,
+            "duration": 14353,
             "state": "passed",
             "speed": "slow",
             "pass": true,
             "fail": false,
             "pending": false,
-            "code": "var list = page.listCourses();",
+            "code": "page.searchCourse().should.eventually.contain(locator.searchKeyWord);",
             "err": {},
             "isRoot": false,
-            "uuid": "9005c683-6b8f-45bf-a224-cf964d4b588f",
-            "isHook": false,
-            "skipped": false
-          },
-          {
-            "title": "it should have filter",
-            "fullTitle": "library app scenarios it should have filter",
-            "timedOut": false,
-            "duration": 11736,
-            "state": "passed",
-            "speed": "slow",
-            "pass": true,
-            "fail": false,
-            "pending": false,
-            "code": "page.clickBasicBtn().should.eventually.contain('零基础');",
-            "err": {},
-            "isRoot": false,
-            "uuid": "74c838ac-8ba2-4e55-946d-de1f11a8cc7d",
+            "uuid": "aab94d09-fe82-4e9c-9940-1ba166d01d6c",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "9005c683-6b8f-45bf-a224-cf964d4b588f",
-          "74c838ac-8ba2-4e55-946d-de1f11a8cc7d"
+          "aab94d09-fe82-4e9c-9940-1ba166d01d6c"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 19937,
+        "duration": 14353,
         "root": false,
         "rootEmpty": false,
-        "_timeout": 50000
+        "_timeout": 80000
       }
     ],
     "passes": [],
