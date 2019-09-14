@@ -1,25 +1,25 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 3,
+    "tests": 2,
     "passes": 2,
     "pending": 0,
-    "failures": 1,
-    "start": "2019-09-13T23:29:56.901Z",
-    "end": "2019-09-13T23:30:12.044Z",
-    "duration": 15143,
-    "testsRegistered": 3,
-    "passPercent": 66.7,
+    "failures": 0,
+    "start": "2019-09-14T07:24:50.069Z",
+    "end": "2019-09-14T07:25:10.042Z",
+    "duration": 19973,
+    "testsRegistered": 2,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
-    "passPercentClass": "warning",
+    "passPercentClass": "success",
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "cf78cc06-4da9-4826-a2f3-11315b04d6d7",
+    "uuid": "ed5e69c8-9de5-493d-8b47-20cba54c9774",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,23 +28,23 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "59c84eeb-f943-417e-95d3-ed2a4b007ae3",
+        "uuid": "63f77b78-a38c-43b4-845f-870ff944ab5d",
         "title": "library app scenarios",
-        "fullFile": "/Users/liuyi/study/js/webdriverjs/test.js",
-        "file": "/test.js",
+        "fullFile": "/Users/liuyi/study/js/webdriverjs/test/list.js",
+        "file": "/test/list.js",
         "beforeHooks": [
           {
             "title": "\"before each\" hook",
             "fullTitle": "library app scenarios \"before each\" hook",
             "timedOut": false,
-            "duration": 0,
+            "duration": 2,
             "pass": false,
             "fail": false,
             "pending": false,
-            "code": "page = new Page();\n      page.driver.manage().window().setPosition(0, -600);\n      page.visit('http://1ke.co/login');",
+            "code": "page = new Page();\n      page.driver.manage().window().setPosition(0, -600);\n      page.visit('http://1ke.co/course/explore');",
             "err": {},
             "isRoot": false,
-            "uuid": "ef208f7c-6428-4652-b84b-44f0d2c18df0",
+            "uuid": "7f0a7bfc-173c-4f17-bed7-1b87907aaeed",
             "isHook": true,
             "skipped": false
           }
@@ -61,77 +61,56 @@
             "code": "page.driver.quit();",
             "err": {},
             "isRoot": false,
-            "uuid": "4bc079c5-2496-4b20-a22e-85e0c7d8c296",
+            "uuid": "107de735-9e94-41f1-b39a-9f7801e36a89",
             "isHook": true,
             "skipped": false
           }
         ],
         "tests": [
           {
-            "title": "works with mocha",
-            "fullTitle": "library app scenarios works with mocha",
+            "title": "it should have a list",
+            "fullTitle": "library app scenarios it should have a list",
             "timedOut": false,
-            "duration": 6298,
-            "state": "failed",
-            "pass": false,
-            "fail": true,
-            "pending": false,
-            "code": "var login = page.login();\n      login.should.eventually.contain('密码!');",
-            "err": {
-              "message": "AssertionError: expected '请输入密码' to include '密码!'",
-              "estack": "AssertionError: expected '请输入密码' to include '密码!'\nFrom: Task: library app scenarios works with mocha\n    at Context.ret (node_modules/selenium-webdriver/testing/index.js:182:10)"
-            },
-            "isRoot": false,
-            "uuid": "0571c90b-8629-4f2e-b5d8-39994722258c",
-            "isHook": false,
-            "skipped": false
-          },
-          {
-            "title": "works with mocha 2",
-            "fullTitle": "library app scenarios works with mocha 2",
-            "timedOut": false,
-            "duration": 4773,
+            "duration": 8201,
             "state": "passed",
             "speed": "slow",
             "pass": true,
             "fail": false,
             "pending": false,
-            "code": "console.log('all right');\nassert.equal(1 + 2, 3);",
+            "code": "var list = page.listCourses();",
             "err": {},
             "isRoot": false,
-            "uuid": "a2fa6c02-7a74-431d-9bca-8ce0cd30829f",
+            "uuid": "9005c683-6b8f-45bf-a224-cf964d4b588f",
             "isHook": false,
             "skipped": false
           },
           {
-            "title": "works with mocha 3",
-            "fullTitle": "library app scenarios works with mocha 3",
+            "title": "it should have filter",
+            "fullTitle": "library app scenarios it should have filter",
             "timedOut": false,
-            "duration": 4031,
+            "duration": 11736,
             "state": "passed",
             "speed": "slow",
             "pass": true,
             "fail": false,
             "pending": false,
-            "code": "var btn = page.requestBtn();\nbtn.background.should.eventually.equal('rgba(29, 206, 115, 1)');\nbtn.state.should.eventually.be.true;",
+            "code": "page.clickBasicBtn().should.eventually.contain('零基础');",
             "err": {},
             "isRoot": false,
-            "uuid": "55fcb86c-f15c-40f3-9e96-072a6a7c250e",
+            "uuid": "74c838ac-8ba2-4e55-946d-de1f11a8cc7d",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "a2fa6c02-7a74-431d-9bca-8ce0cd30829f",
-          "55fcb86c-f15c-40f3-9e96-072a6a7c250e"
+          "9005c683-6b8f-45bf-a224-cf964d4b588f",
+          "74c838ac-8ba2-4e55-946d-de1f11a8cc7d"
         ],
-        "failures": [
-          "0571c90b-8629-4f2e-b5d8-39994722258c"
-        ],
+        "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 15102,
+        "duration": 19937,
         "root": false,
         "rootEmpty": false,
         "_timeout": 50000

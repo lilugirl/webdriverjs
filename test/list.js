@@ -4,7 +4,7 @@
     after,
     before
   } = require('selenium-webdriver/testing');
-  var Page = require('./lib/home_page');
+  var Page = require('../lib/list_page');
   var chai = require('chai');
   var chaiAsPromised = require('chai-as-promised');
   var should = chai.should();
@@ -20,7 +20,7 @@
 
       page = new Page();
       page.driver.manage().window().setPosition(0, -600);
-      page.visit('http://1ke.co/login');
+      page.visit('http://1ke.co/course/explore');
 
 
     });
@@ -30,27 +30,19 @@
 
     });
 
-    it('works with mocha', function () {
+    it('it should have a list', function () {
 
-
-
-      var login = page.login();
-      login.should.eventually.contain('密码!');
-
+      var list = page.listCourses();
 
 
     });
 
-    it('works with mocha 2', function () {
-      console.log('all right');
-      assert.equal(1 + 2, 3);
+    it('it should have filter', function () {
+
+      page.clickBasicBtn().should.eventually.contain('零基础');
+
+
+
     });
-
-    it('works with mocha 3', function () {
-      var btn = page.requestBtn();
-      btn.background.should.eventually.equal('rgba(29, 206, 115, 1)');
-      btn.state.should.eventually.be.true;
-
-    })
 
   });

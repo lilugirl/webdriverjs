@@ -4,8 +4,9 @@
   "description": "a demo for using webdriver",
   "main": "index.js",
   "scripts": {
-    "test": "mocha index --reporter mochawesome --reporter-options autoOpen=true",
-    "newtest": "mocha test --reporter mochawesome --reporter-options autoOpen=true"
+    "test": "mocha test/index --reporter mochawesome --reporter-options autoOpen=true",
+    "testlogin": "mocha test/login --reporter mochawesome --reporter-options autoOpen=true",
+    "testlist": "mocha test/list --reporter mochawesome --reporter-options autoOpen=true"
   },
   "repository": {
     "type": "git",
